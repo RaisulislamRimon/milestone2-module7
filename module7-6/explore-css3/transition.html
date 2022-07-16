@@ -4,38 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>transform</title>
+    <title>transition</title>
     <style>
-      .container,
-      .inner {
-        width: 150px;
-        height: 150px;
-        border: 5px solid khaki;
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        color: white;
+        transition: width 2s linear, height 2s ease-in, transform 2s;
       }
-      .container {
-        background-color: lightblue;
-      }
-      .inner {
-        background-color: lightgreen;
-        /* transform: scale(0.75); */
-        /* transform: rotate(30deg); */
-        /* transform: scale(0.6) rotate(45deg); */
-        /* transform: translate(100px); */
-        transform: translate(100px, 50px) scale(0.6) rotate(45deg);
+      .box:hover {
+        width: 200px;
+        height: 200px;
+        /* transform: scale(2); */
+        transform: rotate(40deg);
       }
     </style>
   </head>
   <body>
-    <h1>transform</h1>
-    <h2>transformers in the world</h2>
-    <div class="box container">
-      <div class="inner">Box-1</div>
-    </div>
-    <div class="box container">
-      <div class="inner">Box-2</div>
-    </div>
-    <div class="box container">
-      <div class="inner">Box-3</div>
+    <h1>transition</h1>
+    <div class="box">
+      <h3>transition</h3>
     </div>
   </body>
 </html>

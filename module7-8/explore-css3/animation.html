@@ -9,9 +9,13 @@
       @keyframes sliding {
         from {
           background-color: limegreen;
+          left: 0;
+          top: 0;
         }
         to {
           background-color: magenta;
+          left: 80%;
+          top: 20%;
         }
       }
       .stage {
@@ -24,6 +28,7 @@
         height: 50px;
         background-color: red;
         border-radius: 25px;
+        position: relative;
         animation: sliding 2s ease-in-out 0.5s infinite alternate;
         animation-play-state: running;
       }
